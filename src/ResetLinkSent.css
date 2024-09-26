@@ -1,0 +1,72 @@
+.reset-link-sent-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6%;
+}
+.hi {
+  align-items: center;
+  margin-bottom: 2%;
+}
+.logo {
+  margin-left: 1%;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Blue background */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.tick-mark {
+  font-size: 24px;
+  color: white;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.open-email-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.divider {
+  width: 100%;
+  /* margin: 20px 0; */
+}
+
+.divider hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
