@@ -6,51 +6,45 @@ import Grid from '@mui/material/Grid2';
 export const DoctorAppointment= () => {
   return (
    <Box sx={{
+     flexGrow: 1, 
     backgroundColor:'#F7F7F7',
     position:'relative',
     bottom:'217px'
    }}>
    
-    <Grid sx={{
-        display: 'inline-flex',
+    <Grid container spacing={2} sx={{
+        // display: 'inline-flex',
     }}>
-<Box sx={{display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'row',flexWrap:'nowrap'}}>
-       <Grid size={5} 
-       sx={{
-        padding:'64px',
-        borderRadius:'80px'
-       }}>
-<Box  sx={{
-    // objectFit:'cover',
-    borderRadius:'80px',
-    
-    // overflow:'hidden/'
-}}>
-
-       <img className='doctorimg'
-       src={doctorimg}
-       alt='ima'
-       width='250px'
-       height='250px'
-       borderRadius='80px'  
-           >
        
+        <Grid size={5} sx={{display:'flex',justifyContent:'flex-start',alignItems:'center',flexDirection:'row',flexWrap:'nowrap'}}>
+          <Box  sx={{
+         // objectFit:'cover',
+             
+               p:'100px'
+         // overflow:'hidden/'
+          }}>
+
+            <img  style={{borderRadius:'200px'}}
+             src={doctorimg}
+            alt='doctorimg'
+            width='250px'
+            height='250px'>
        </img>
-      </Box> 
-          </Grid>
+          </Box> 
+        </Grid>
    
     {/*headerdoctorinfoBox*/}
-       <Grid size={7}>
-    <Box sx={{
-      pt:'48px',
-        pl:'250px'
-    }}>
-      <Typography variant='h3' fontWeight={500}>Meet Our Doctor</Typography>
-      <Typography pt={'16px'} variant='body1'  fontWeight={200}>About Dr. Basit</Typography>
+        <Grid size={7}>
+          <Box sx={{
+          pt:'48px',
+          
+         }}>
+      <Typography variant='h3' fontWeight={400}>Meet Our Doctor</Typography>
+      <Typography pt={'16px'} variant='body1'  fontWeight={300}>About Dr. Basit</Typography>
       <Typography pt={'5px'}  display={'inline-flex'} variant='body1'  fontWeight={300}>Best 
-           <Typography pl={'2px'} variant='body1' fontWeight={500} color='#1A78F2'>Consultant
+           <Typography pl={'2px'} variant='body1' fontWeight={600} color='#1A78F2'>Consultant
            </Typography></Typography>
-      <Typography pt={'5px'}  variant='body1' fontWeight={200}>A consultant doctor is a highly qualified medical professional who specializes in a specific area of medicine, providing expert advice and care to patients withcomplex health conditions. With extensive training and experience, they
+      <Typography pt={'5px'}  variant='body1' fontWeight={300}>A consultant doctor is a highly qualified medical professional who specializes in a specific area of medicine, providing expert advice and care to patients withcomplex health conditions. With extensive training and experience, they
       diagnose and manage challenging cases, developing personalized treatment
       plans to ensure the best possible outcomes. As a trusted specialist,
       a consultant doctor offers in-depth knowledge and skills, guiding patients
@@ -60,17 +54,17 @@ export const DoctorAppointment= () => {
       <Box sx={{
         textAlign:'right'
       }}>
-      <Typography alignItems={'end'} alignContent={'end'}pt={'10px'} variant='subtitle1' fontWeight={500} >MBBS, MD (General Physician)</Typography></Box>
+      <Typography  pt={'10px'} variant='subtitle1' fontWeight={500} >MBBS, MD (General Physician)</Typography></Box>
      
-    </Box>
-       </Grid>
-       </Box>
-    {/*footerspouncersBox*/}
-    <Grid>
-    <Box>
+          </Box>
+        </Grid>
 
-    </Box>
-    </Grid>
+    {/*footerspouncersBox*/}
+        <Grid>
+          <Box>
+
+          </Box>
+        </Grid>
     </Grid>
    </Box>
   )
